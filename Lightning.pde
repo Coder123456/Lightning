@@ -1,10 +1,9 @@
 
- 
 
 int startX = 0 ;
-int startY = 300 ;
+int startY = 200 ;
 int  endX = 0 ;
-int endY = 300;
+int endY = 200;
 void setup() 
 {
   size(600,600);
@@ -16,9 +15,9 @@ void draw()
 {
 while(startX < 600)
 {
-        int maxe = 9; 
-        int mine = -9; 
-        int rangee = 19; 
+        int maxe = 15; 
+        int mine = -15; 
+        int rangee = 31; 
          int rande = (int)(Math.random() * rangee) + mine; 
         int max = 9; 
         int min = 0; 
@@ -39,9 +38,10 @@ while(startX < 600)
 }
 void mousePressed()
 {
-  background(150,240,40);
+ 
  startX = 0 ;
 startY = 300 ;
  endX = 0 ;
 endY = 300;
+
 }
