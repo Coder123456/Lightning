@@ -1,4 +1,3 @@
-
 // Parasite
 int startX = 0 ;
 int startY = 200 ;
@@ -8,20 +7,19 @@ void setup()
 {
   size(600,600);
 strokeWeight(60);
-stroke(0,64,220);
-background(150,240,40);
+stroke(20,200,50);
+background(160,140,140);
 }
 void draw()
 {
-while(startX < 600)
+while(startX < 630)
 {
-        int maxe = 15; 
-        int mine = -15; 
-        int rangee = 31; 
+        
+        int mine = -16; 
+        int rangee = 30; 
          int rande = (int)(Math.random() * rangee) + mine; 
-        int max = 9; 
         int min = 0; 
-        int range = 10; 
+        int range = 30; 
          int rand = (int)(Math.random() * range) + min; 
          endX = startX + rand;
          endY = startY + rande;
@@ -40,8 +38,8 @@ void mousePressed()
 {
  
  startX = 0 ;
-startY = 300 ;
+startY = startY + 100 ;
  endX = 0 ;
-endY = 300;
+endY = endY + 100;
 
 }
